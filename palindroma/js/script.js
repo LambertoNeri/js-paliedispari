@@ -19,12 +19,12 @@ palindromo(word)
 
 function palindromo(inverted) {
 
-    const dai = []
+    let dai = []
     
-    for ( let i = 0 ; i < word.length; i++) {
+    for ( let i = 0 ; i < inverted.length; i++) {
         //console.log(word[word.length - (i + 1)])
 
-        dai.push (`${word[word.length - (i + 1)]}`)
+        dai.push (`${inverted[inverted.length - (i + 1)]}`)
 
     }
         
