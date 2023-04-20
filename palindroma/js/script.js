@@ -19,25 +19,25 @@ palindromo(word)
 
 function palindromo(inverted) {
 
-    let dai = []
+    let dai = ''
     
     for ( let i = 0 ; i < inverted.length; i++) {
         //console.log(word[word.length - (i + 1)])
 
-        dai.push (`${inverted[inverted.length - (i + 1)]}`)
+        dai += (`${inverted[inverted.length - (i + 1)]}`)
 
     }
         
 
    console.log(dai)
 
-   /* if (dai == word) {
+    if (dai == word) {
         console.log ('è palindromo!!');
         return true
     } else {
         console.log ('non è palindromo');
         return false
-    }  */
+    }  
 }
 
 
