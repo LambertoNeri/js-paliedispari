@@ -8,23 +8,30 @@ Dichiariamo chi ha vinto.
 */
 const evenOrOdd = (prompt('pari o dispari?'))
 const userNumber = parseInt(prompt('inserisci un numero da 1 a 5'));
-const computerNumber = Math.floor(Math.random() * 5) + 1;
+const computerNumber = Math.floor(Math.random() * 5) + 1; 
 const sum = (userNumber + computerNumber)
+
+console.log ('numero computer', computerNumber)
+console.log ('somma numero computer + utente', sum)
 
 function isEven(bho){
     if (bho % 2 == 0 ) {
         console.log('Pari!!!!')
         return true
-    } else {
+    } else if (bho % 2 == 1) {
         console.log ('Dispari!!!')
         return false
     }
 }
 
-if (sum[isEven] == true && evenOrOdd == ('pari')) {
-    alert('hai vinto era pari!')
-} else if (sum[isEven] == false && evenOrOdd == ('dispari')) {
-    alert('hai vinto era dispari!')
-} else {
-    alert ('hai perso')
-}
+console.log (isEven(sum))
+
+if (isEven(sum) == true && evenOrOdd == ('pari')) {
+    alert('hai vinto era pari!');
+} else if (isEven(sum) == false && evenOrOdd == ('dispari')) {
+    alert('hai vinto era dispari!');
+} else if (isEven(sum) == true && evenOrOdd == ('dispari')) {
+    alert ('hai perso era pari');
+} else if (isEven(sum) == false && evenOrOdd == ('pari')) {
+    alert ('hai perso era dispari');
+} 
