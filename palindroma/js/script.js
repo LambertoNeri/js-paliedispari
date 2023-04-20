@@ -11,7 +11,7 @@ Creare una funzione per capire se la parola inserita è palindroma */
 const word = prompt('inserisci una parola');
 
 
-//creare un funzione che inverta word e controlli se "inverted" e "word" sono identiche. IF sono uguali = true, Else = falseù
+//creare un funzione che inverta word e controlli se "inverted" e "word" sono identiche. IF sono uguali = true, Else = false
 
 palindromo(word)
 
@@ -31,7 +31,7 @@ function palindromo(inverted) {
 
    console.log(dai)
 
-   /* if (inverted == word) {
+   /* if (dai == word) {
         console.log ('è palindromo!!');
         return true
     } else {
