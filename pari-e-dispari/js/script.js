@@ -6,21 +6,30 @@ Sommiamo i due numeri
 Stabiliamo se la somma dei due numeri è pari o dispari (usando una funzione)
 Dichiariamo chi ha vinto.  
 */
-const evenOrOdd = (prompt('pari o dispari?'))
-const userNumber = parseInt(prompt('inserisci un numero da 1 a 5'));
-const computerNumber = Math.floor(Math.random() * 5) + 1; 
-const sum = (userNumber + computerNumber)
 
-console.log ('numero computer', computerNumber)
-console.log ('somma numero computer + utente', sum)
+function getRndInteger(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) ) + min;
+  }
+
+
+const evenOrOdd = (prompt('pari o dispari?'));
+const userNumber = parseInt(prompt('inserisci un numero da 1 a 5'));
+const computerNumber = getRndInteger(1, 5);
+const sum = (userNumber + computerNumber);
+
+console.log ('numero computer', computerNumber);
+console.log ('numero utente', userNumber);
+console.log ('somma numero computer + utente', sum);
+
+
 
 function isEven(bho){
-    if (bho % 2 == 0 ) {
+    if (bho % 2 == 0 ) { 
         console.log('Pari!!!!')
-        return true
+        return true;
     } else if (bho % 2 == 1) {
         console.log ('Dispari!!!')
-        return false
+        return false;
     }
 }
 
